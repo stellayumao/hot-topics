@@ -2,7 +2,7 @@
 const navItems = document.querySelectorAll("nav a");
 const container = document.querySelector(".container");
 
-let path = "http://localhost:8888/hot-topics/partials/home.html";
+let path = "https://stellayumao.github.io/hot-topics/partials/home.html";
 
 // handling clicking
 function handleClick(ev) {
