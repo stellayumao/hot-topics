@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Source+Sans+Pro');
+/*Color Scheme
+#F08354;
+#000000;
+#FFF5EB
+*/
+body{
+	line-height: 1.5;
+	text-align: center;
+}
+.wrapper{
+	margin: 1rem;
+}
+/*header html*/
+.brand-img{
+	width: 3.5rem;
+}
+.masthead-mobile{
+	font-size: 1.5rem;
+	font-family: 'Alegreya', serif;
+	color: #F08354;
+}
+nav ul li a{
+	display: block;
+	text-decoration: none;
+	font-family: 'Alegreya', serif;
+	font-size: 1rem;
+	color: #000000;
+	background-color: #FFF5EB;
+	padding: 1rem;
+}
+nav ul li{
+	display: block;
+	margin-top: 1rem;
+}
+
+/* main css - homepage*/
+h2{
+	font-size: 1rem;
+	font-family: 'Alegreya', serif;
+	color: #000000;
+	padding-bottom: 0.5rem;
+}
+figure img{
+	width: 100%;
+}
+figcaption{
+	font-size: 0.75rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #000000;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.container p{
+	font-size: 0.75rem;
+	text-align: left;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #000000;
+}
+
+/* main css - portfolio*/
+h1{
+	font-size: 1rem;
+	font-family: 'Alegreya', serif;
+	color: #000000;
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+}
+.parent p{
+	text-align: center;
+	font-size: 0.75rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #000000;
+	padding-top: 0.5rem;
+	padding-bottom: 2rem;
+}
+.parent img{
+	width: 100%;
+}
+
+/*footer css*/
+h3{
+	font-size: 1rem;
+	font-family: 'Alegreya', serif;
+	color: #F08354;
+}
+p{
+	font-size: 0.75rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #000000;
+	padding-top: 0.25rem;
+}
+footer{
+	margin-bottom: 3rem;
+}
+footer ul{
+	margin-top: 1rem;
+}
+footer ul li{
+	display: inline-block;
+	width: 10%;
+	margin-right: 5%;
+}
+footer ul li i{
+	color: #F08354;
+	font-size: 1.5rem;
+}
+
+/*media query*/
+@media screen and (max-width: 35rem){
+	.masthead-tablet{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 35rem){
+	#main-nav {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	#main-nav li {
+		flex-grow: 1;
+		margin: 0.5rem;
+	}
+	
+	nav ul li{
+		display: inline-block;
+		width: 40%;
+		margin-right: 2%;
+	}
+	nav ul li a{
+		padding: 0.6rem;
+		font-size: 1.3rem;
+	}
+	.masthead-mobile{
+		display: none;
+	}
+	.masthead-tablet{
+		font-size: 2rem;
+		font-family: 'Alegreya', serif;
+		color: #F08354;
+		margin-top: 1rem;
+		padding: 5rem;
+		background-image: url(../img/masthead.png);
+		background-size: cover;
+	}
+	h2{
+		font-size: 1.3rem;
+		padding-top: 0.5rem;
+		padding-bottom: 1rem;
+	}
+	figure{
+		float: left;
+		width: 40%;
+		margin-right: 2rem;
+	}
+	figcaption{
+		font-size: 1rem;
+	}
+	.container p{
+		font-size: 1rem;
+	}
+	.text{
+		transform: translateY(-0.5rem);
+	}
+	h1{
+		font-size: 1.3rem;
+		padding-top: 0.5rem;
+	}
+	.parent{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.child{
+		width: 21rem;
+		flex-grow: 1;
+		margin: 0.5rem;
+	}
+	.parent p{
+		font-size: 1rem;
+		padding-bottom: 3rem;
+	}
+	h3{
+		font-size: 1.3rem;
+	}
+	p{
+		font-size: 1rem;
+	}
+	footer ul li i{
+		font-size: 2rem;
+	}
+	
+	.clear {
+		margin: 0.5rem;
+	}
+	
+	.clear::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+@media screen and (min-width: 80rem){
+	.wrapper{
+		max-width: 70%;
+		margin: auto;
+	}
+	body{
+		text-align: center;
+	}
+	nav ul li a{
+		display: inline-block;
+		padding: 0.5rem 4rem 0.5rem 4rem;
+	}
+	.flex-container{
+		display: flex;
+	}
+	header img{
+		margin-right: 2rem;
+	}
+	.flex-child:last-child ul li:first-child {
+		margin-right: 1rem;
+	}
+	.masthead-tablet{
+		font-size: 2.5rem;
+		margin-top: 1.5rem;
+		padding: 6.25rem;
+	}
+	h2{
+		font-size: 1.7rem;
+		padding-top: 1rem;
+		padding-bottom: 1.5rem;
+		text-align: left;
+	}
+	figcaption{
+		font-size: 1.25rem;
+	}
+	.container p{
+		font-size: 1.25rem;
+	}
+/*
+	figure{
+		margin-right: 0;
+	}
+*/
+	.text{
+		float: right;
+		width: calc(60% - 2rem);
+		transform: translateY(-1rem);
+	}
+	h1{
+		font-size: 1.7rem;
+		padding-top: 1rem;
+		text-align: left;
+	}
+	.parent p{
+		font-size: 1.25rem;
+		padding-bottom: 5rem;
+	}
+	h3{
+		font-size: 1.7rem;
+	}
+	p{
+		font-size: 1.25rem;
+		padding-top: 0.75rem;
+	}
+	footer ul{
+		margin-top: 2rem;
+	}
+	footer ul li i{
+		font-size: 3rem;
+	}
+	
+	footer{
+		text-align: left;
+	}
+}
